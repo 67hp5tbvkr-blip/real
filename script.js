@@ -121,11 +121,48 @@ function prepareVideos(){
    FEATURED ROW
 -------------------------- */
 function renderFeatured(){
+
   if (!featuredRow) return;
 
   featuredRow.innerHTML = "";
 
-  const selection = allVideos.slice(0, 4);
+  const selection = [
+    { id: "FT0frI2LMtY", title: "BANDE ANNONCE" },
+    { id: "mps9I3NBjeQ", title: "CAPTATION" },
+    { id: "CELXcME_HkE", title: "MUSIQUE" },
+    { id: "4c_jGWO1Bic", title: "MOTION DESIGN" }
+  ];
+
+  selection.forEach((video) => {
+
+    const card = document.createElement("article");
+    card.className = "featured-card";
+
+    card.innerHTML = `
+      <div class="featured-thumb">
+        <img src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${video.title}">
+      </div>
+
+      <div class="featured-meta">
+        <h3>${video.title}</h3>
+      </div>
+    `;
+
+    card.addEventListener("click", () => openVideo(video.id));
+
+    featuredRow.appendChild(card);
+  });
+}
+  if (!featuredRow) return;
+
+  featuredRow.innerHTML = "";
+
+  const selection = [
+  { id: "FT0frI2LMtY", title: "BANDE ANNONCE" },
+  { id: "mps9I3NBjeQ", title: "CAPTATION" },
+  { id: "CELXcME_HkE", title: "MUSIQUE" },
+  { id: "4c_jGWO1Bic", title: "MOTION DESIGN" }
+];
 
   selection.forEach((video) => {
     const card = document.createElement("article");
