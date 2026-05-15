@@ -1,0 +1,57 @@
+{
+  "compétences": [
+    { "id": "qomp7lstAms", "title": "UN ACCOMPAGNEMENT GLOBAL POUR VOS PROJETS" },
+    { "id": "bgZ9WvqPgFk", "title": "SHOWREEL 2010-2016" },
+    { "id": "G3zP-RhcgAE", "title": "SHOWREEL 2017-2023" }
+  ],
+
+  "bandes_annonces": [
+    { "id": "Wdr43kj-NyA", "title": "TU TE SOUVIENDRAS DE MOI, Théâtre de Paris 2019" },
+    { "id": "W8Z1gdf_uas", "title": "UN PRÉSIDENT NE DEVRAIT PAS DIRE ÇA, Théâtre Libre 2023" },
+    { "id": "J7lSrsdZGrs", "title": "VINCENT DEDIENNE, Un Soir de Gala 2024" },
+    { "id": "4zTZgJLQkRk", "title": "LE JOURNAL, Théatre de Paris 2025" },
+    { "id": "Asa1QTK9zgo", "title": "LA VEUVE RUSÉE, Bouffes Parisiens 2025" },
+    { "id": "3MDdkkXQMl0", "title": "LA CORDE, Théatre Marigny 2025" },
+    { "id": "T6LVuTsGaGI", "title": "LA JALOUSIE, Théâtre de la Michodière 2025" },
+    { "id": "wOnxKjSHCIQ", "title": "AL CAPONE, Folies Bergère 2023" },
+    { "id": "fLNfS5OR8t4", "title": "1h22 AVANT LA FIN, La Scala 2022" },
+    { "id": "i6kzwA-aihI", "title": "N'ÉCOUTEZ PAS MESDAMES, Théâtre de la Michodière 2020" },
+    { "id": "w5J2Z46D8XQ", "title": "MUR MURE, Théâtre de la Michodière 2025" },
+    { "id": "uPAi6L5VZXQ", "title": "PLAIDOIRIES, Théâtre Libre 2019" },
+    { "id": "FT0frI2LMtY", "title": "LES GENS DE BILBAO, Théâtre Marigny 2024" },
+    { "id": "Ly1Kj0XKxfY", "title": "AMIS, Théâtre de la Michodière 2020" },
+    { "id": "wowFp_Xi5cY", "title": "LA SOURICIÈRE, Théâtre de la Pépinière 2020" },
+    { "id": "uoeQna0K1PM", "title": "UN SINGE EN HIVER, Théâtre de Paris 2014" },
+    { "id": "J8eWtCsYMXs", "title": "COUPABLE, Théatre Marigny 2023" },
+    { "id": "w9mNIYKFLSs", "title": "UN TRAMWAY NOMMÉ DÉSIR, Bouffes Parisiens 2024" }
+  ],
+
+  "captations": [
+    { "id": "mps9I3NBjeQ", "title": "Dany Boon des Haut de France 2016" },
+    { "id": "3R9JkIP1OJI", "title": "Patrick Timsit One man Stand-up Show 2014" },
+    { "id": "7YQ7dYsKYUI", "title": "Jean-François Cayrey, Ils sont cons ou c'est moi 2016" },
+    { "id": "5clhq60lsUI", "title": "Titoff, Déjà de retour 2012" },
+    { "id": "XqpyeVe3O6E", "title": "Plaidoiries, Théâtre Libre 2019" },
+    { "id": "8-Xp32N619s", "title": "Camille Lellouche, En vrai 2018" }
+  ],
+
+  "musique": [
+    { "id": "FEGr2EqS7PI", "title": "Marc Lavoine, Arthur H & Cœur de pirate" },
+    { "id": "CELXcME_HkE", "title": "CIRCUS" },
+    { "id": "jb1W3GroHJA", "title": "JUICE" },
+    { "id": "RIHeK9ODWwY", "title": "Y.NOAH & ASA" },
+    { "id": "7qFAUSr7ar0", "title": "Alagna / Pelletier" },
+    { "id": "H5cKEoIX7-Q", "title": "Anggun" }
+  ],
+
+  "interviews_reportages": [
+    { "id": "3zNiJ_rMZAE", "title": "Les Coulisses de Lily & Lily, pour Fimalac" },
+    { "id": "_yUVvoFvk9E", "title": "Par le bout du nez, pour JMD production" },
+    { "id": "w9UcwcsZLis", "title": "88 fois l'infini, pour ArtsLive" },
+    { "id": "ZdiVW-QtV-g", "title": "Documentaire 52', pour Planet+" },
+    { "id": "4wbgjnlYkdo", "title": "Le Misanthrope 1/2, pour JMD production" },
+    { "id": "gg5jIRF7ifE", "title": "Le Misanthrope 2/2, pour JMD production" },
+    { "id": "bk9juNdwmuk", "title": "L'audience est ouverte, pour ArtsLive" },
+    { "id": "ilNQ8NfqCv8", "title": "La Note, L'avant Scène, Théatre des Bouffes Parisien" }
+  ]
+}
