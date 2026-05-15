@@ -82,7 +82,7 @@ a{color:inherit;}
   height:120%;
   transform:translate(-50%,-50%);
   border:0;
-  filter:contrast(1.05) brightness(0.75);
+  filter:none;
 }
 
 .hero-overlay,
@@ -91,9 +91,9 @@ a{color:inherit;}
   inset:0;
   background:linear-gradient(
     0deg,
-    rgba(0,0,0,0.88) 0%,
-    rgba(0,0,0,0.36) 45%,
-    rgba(0,0,0,0.70) 100%
+    rgba(0,0,0,0.35) 0%,
+    rgba(0,0,0,0.08) 50%,
+    rgba(0,0,0,0.22) 100%
   );
 }
 
