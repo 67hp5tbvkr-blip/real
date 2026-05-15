@@ -1,0 +1,2 @@
+Place ici ton PNG de logos clients et renomme-le : logos-clients.png
+Chemin final attendu : assets/logos/logos-clients.png
