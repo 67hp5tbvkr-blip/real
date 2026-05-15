@@ -23,21 +23,22 @@ if (unmuteBtn) {
     const hero = document.getElementById("heroPlayer");
     if (!hero) return;
 
-    hero.src = "https://www.youtube.com/embed/G3zP-RhcgAE?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1";
+    hero.src =
+      "https://www.youtube.com/embed/G3zP-RhcgAE?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1";
   });
 }
 
 /* -------------------------
    LIGHTBOX
 -------------------------- */
-function openVideo(id){
+function openVideo(id) {
   if (!lightbox || !player) return;
 
   lightbox.style.display = "flex";
   player.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
 }
 
-function closeVideo(){
+function closeVideo() {
   if (!lightbox || !player) return;
 
   lightbox.style.display = "none";
@@ -59,13 +60,9 @@ document.addEventListener("keydown", (event) => {
 });
 
 /* -------------------------
-   DATA LOADING
-   IMPORTANT :
-   Garde ton JSON tel quel.
-   Le fichier doit simplement s'appeler videos.json
-   et être placé à la racine, à côté de index.html.
+   LOAD JSON
 -------------------------- */
-async function loadVideos(){
+async function loadVideos() {
   try {
     const response = await fetch("videos.json");
 
@@ -74,18 +71,19 @@ async function loadVideos(){
     }
 
     videosData = await response.json();
+
     prepareVideos();
     renderFeatured();
     applyFilter("all");
-
   } catch (error) {
     console.error(error);
 
     if (grid) {
       grid.innerHTML = `
         <p style="color:rgba(255,255,255,0.65);">
-          Impossible de charger le catalogue vidéo. Vérifie que ton fichier <strong>videos.json</strong>
-          est bien à la racine du site.
+          Impossible de charger le catalogue vidéo.
+          Vérifie que ton fichier <strong>videos.json</strong>
+          est bien à la racine du site, à côté de index.html.
         </p>
       `;
     }
@@ -97,9 +95,9 @@ async function loadVideos(){
 }
 
 /* -------------------------
-   PREPARE JSON
+   PREPARE VIDEOS
 -------------------------- */
-function prepareVideos(){
+function prepareVideos() {
   allVideos = [];
 
   Object.entries(videosData).forEach(([category, videos]) => {
@@ -118,10 +116,9 @@ function prepareVideos(){
 }
 
 /* -------------------------
-   FEATURED ROW
+   FEATURED VIDEOS
 -------------------------- */
-function renderFeatured(){
-
+function renderFeatured() {
   if (!featuredRow) return;
 
   featuredRow.innerHTML = "";
@@ -134,49 +131,21 @@ function renderFeatured(){
   ];
 
   selection.forEach((video) => {
-
     const card = document.createElement("article");
     card.className = "featured-card";
 
-    card.innerHTML = `
-      <div class="featured-thumb">
-        <img src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${video.title}">
-      </div>
-
-      <div class="featured-meta">
-        <h3>${video.title}</h3>
-      </div>
-    `;
-
-    card.addEventListener("click", () => openVideo(video.id));
-
-    featuredRow.appendChild(card);
-  });
-}
-  if (!featuredRow) return;
-
-  featuredRow.innerHTML = "";
-
-  const selection = [
-  { id: "FT0frI2LMtY", title: "BANDE ANNONCE" },
-  { id: "mps9I3NBjeQ", title: "CAPTATION" },
-  { id: "CELXcME_HkE", title: "MUSIQUE" },
-  { id: "4c_jGWO1Bic", title: "MOTION DESIGN" }
-];
-
-  selection.forEach((video) => {
-    const card = document.createElement("article");
-    card.className = "featured-card";
     card.innerHTML = `
       <div class="featured-thumb">
         <img src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${escapeHtml(video.title)}">
       </div>
+
       <div class="featured-meta">
         <h3>${escapeHtml(video.title)}</h3>
       </div>
     `;
 
     card.addEventListener("click", () => openVideo(video.id));
+
     featuredRow.appendChild(card);
   });
 }
@@ -195,7 +164,7 @@ filterButtons.forEach((button) => {
   });
 });
 
-function applyFilter(filter){
+function applyFilter(filter) {
   displayed = 0;
 
   if (filter === "all") {
@@ -205,13 +174,14 @@ function applyFilter(filter){
   }
 
   if (grid) grid.innerHTML = "";
+
   renderMore();
 }
 
 /* -------------------------
-   GRID RENDER
+   GRID
 -------------------------- */
-function renderMore(){
+function renderMore() {
   if (!grid) return;
 
   const nextVideos = filteredVideos.slice(displayed, displayed + STEP);
@@ -219,10 +189,12 @@ function renderMore(){
   nextVideos.forEach((video) => {
     const card = document.createElement("article");
     card.className = "card";
+
     card.innerHTML = `
       <div class="thumb">
         <img src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${escapeHtml(video.title)}">
       </div>
+
       <div class="meta">
         <h3>${escapeHtml(video.title)}</h3>
         <span>${formatCategory(video.category)}</span>
@@ -230,13 +202,15 @@ function renderMore(){
     `;
 
     card.addEventListener("click", () => openVideo(video.id));
+
     grid.appendChild(card);
   });
 
   displayed += nextVideos.length;
 
   if (loadMoreBtn) {
-    loadMoreBtn.style.display = displayed >= filteredVideos.length ? "none" : "inline-flex";
+    loadMoreBtn.style.display =
+      displayed >= filteredVideos.length ? "none" : "inline-flex";
   }
 }
 
@@ -247,14 +221,14 @@ if (loadMoreBtn) {
 /* -------------------------
    HELPERS
 -------------------------- */
-function formatCategory(category){
+function formatCategory(category) {
   return category
     .replaceAll("_", " ")
     .replace("bandes annonces", "bandes-annonces")
     .replace("interviews reportages", "interviews / reportages");
 }
 
-function escapeHtml(text){
+function escapeHtml(text) {
   return String(text)
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
@@ -263,4 +237,7 @@ function escapeHtml(text){
     .replaceAll("'", "&#039;");
 }
 
+/* -------------------------
+   INIT
+-------------------------- */
 loadVideos();
