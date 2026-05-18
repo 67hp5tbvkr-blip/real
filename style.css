@@ -475,23 +475,34 @@ a{color:inherit;}
   height:520px;
   border:0;
 }
-/* REFERENCES PAGE */
+/* REFERENCES FIX FINAL */
 
 .references-page .references-hero{
   min-height:auto;
   padding-top:130px;
-  padding-bottom:45px;
+  padding-bottom:60px;
 }
 
 .references-page .references-hero .section-inner{
   text-align:left;
 }
 
+.references-page .references-main-logo{
+  display:block;
+  width:100%;
+  max-width:1400px;
+  height:auto;
+  margin:40px auto 36px auto;
+  object-fit:contain;
+}
+
 .references-page .references-actions{
-  display:flex;
+  display:flex !important;
+  justify-content:center;
+  align-items:center;
   gap:14px;
   flex-wrap:wrap;
-  margin-top:34px;
+  margin:0 !important;
   position:static !important;
   transform:none !important;
 }
@@ -503,37 +514,42 @@ a{color:inherit;}
 
 .references-page .references-intro{
   max-width:880px;
-  margin:0 0 55px 0;
+  margin:0 0 60px 0;
   position:static !important;
   transform:none !important;
 }
 
 .references-page .references-affiche{
   display:block;
-  width:min(900px, 100%);
+  width:100vw;
+  max-width:none;
   height:auto;
-  margin:0 auto;
+  margin-left:50%;
+  transform:translateX(-50%);
 }
 
 .references-page .final-cta{
   border-top:1px solid var(--line);
 }
 
-.references-page .hero-actions,
-.references-page .hero-text{
-  position:static !important;
-  transform:none !important;
-}
-
 @media (max-width:768px){
   .references-page .references-hero{
     padding-top:110px;
-    padding-bottom:35px;
+    padding-bottom:45px;
+    overflow:visible;
+  }
+
+  .references-page .references-main-logo{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    margin:32px auto 30px auto;
+    object-fit:contain;
   }
 
   .references-page .references-actions{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
   }
 
   .references-page .references-actions .btn{
@@ -542,12 +558,9 @@ a{color:inherit;}
     text-align:center;
   }
 
-  .references-page .references-affiches{
-    padding-top:45px;
-  }
-
-  .references-page .references-intro{
-    margin-bottom:40px;
+  .references-page .references-affiche{
+    width:100vw;
+    max-width:none;
   }
 }
 /* TOOLS SECTION */
