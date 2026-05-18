@@ -1,3 +1,6 @@
+```html
+<!-- ========================= index.html ========================= -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -34,6 +37,161 @@
 
   <nav class="nav">
     <a href="index.html#projects">Projets</a>
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="references.html">Références</a>
+    <a href="about.html">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <iframe
+    id="heroPlayer"
+    class="hero-video"
+    playsinline
+    src="https://www.youtube.com/embed/G3zP-RhcgAE?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=G3zP-RhcgAE&rel=0&modestbranding=1&enablejsapi=1"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    title="Showreel William Duchene"
+  ></iframe>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-text">
+    <h1>William Duchene</h1>
+
+    <p>
+      Réalisateur vidéo — Captation, bandes-annonces, musique & documentaire
+    </p>
+
+    <div class="hero-actions">
+
+      <button class="btn" id="unmuteBtn">
+        Activer le son
+      </button>
+
+      <a
+        class="btn btn-outline"
+        href="mailto:willduchene@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20vid%C3%A9o"
+      >
+        Demander un devis
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section featured" id="projects">
+  <div class="section-inner">
+
+    <div class="section-header">
+      <p class="subtitle">
+        Storytelling, scénario, storyboard, production, réalisation & postproduction<br />
+        Un accompagnement premium de A à Z pour les artistes, les spectacles, les salles et les marques.
+      </p>
+    </div>
+
+    <div class="featured-row" id="featuredRow"></div>
+
+  </div>
+</section>
+
+<section class="section catalog">
+
+  <div class="section-inner">
+
+    <div class="section-header">
+      <h2>RÉALISATIONS</h2>
+
+      <p class="subtitle">
+        Sélection de vidéos : bandes-annonces, captations, interviews, musique et accompagnement créatif.
+      </p>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">Tout</button>
+      <button class="filter" data-filter="compétences">Compétences</button>
+      <button class="filter" data-filter="bandes_annonces">Bandes annonces</button>
+      <button class="filter" data-filter="captations">Captations</button>
+      <button class="filter" data-filter="musique">Musique</button>
+      <button class="filter" data-filter="interviews_reportages">Interviews</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="loadmore-wrap">
+      <button class="btn btn-outline" id="loadMoreBtn">
+        Charger plus
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+
+  <div class="section-inner">
+
+    <h2>Discutons de votre projet</h2>
+
+    <p>
+      Vous avez une idée, un spectacle, une marque ou un film à produire ?
+      Je peux vous accompagner de l’écriture à la livraison finale,
+      avec une approche cinématographique et une production maîtrisée.
+    </p>
+
+    <div class="contact-actions">
+
+      <a
+        class="btn"
+        href="mailto:willduchene@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20vid%C3%A9o"
+      >
+        Demander un devis / Discuter d’un projet
+      </a>
+
+    </div>
+
+    <a class="contact-email" href="mailto:willduchene@gmail.com">
+      willduchene@gmail.com
+    </a>
+
+    <footer class="footer">
+      William Duchene — Réalisateur / Vidéaste<br />
+      Captation multicam · Teasers · Interviews · Clips · Documentaires<br />
+      Paris · France · Europe · Worldwide<br />
+      © William Duchene — Tous droits réservés
+    </footer>
+
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+
+  <button
+    class="lightbox-close"
+    id="closeBtn"
+    aria-label="Fermer la vidéo"
+  >
+    ✕
+  </button>
+
+  <div class="lightbox-content">
+    <iframe
+      id="player"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="Lecteur vidéo"
+    ></iframe>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
     <a href="services.html">Services</a>
     <a href="process.html">Process</a>
     <a href="references.html">Références</a>
