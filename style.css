@@ -843,3 +843,8 @@ a{color:inherit;}
     max-width:96vw;
   }
 }
+@media (max-width:768px){
+
+  #unmuteBtn{
+    display:none !important;
+  }
