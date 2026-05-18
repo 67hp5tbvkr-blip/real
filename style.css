@@ -476,50 +476,67 @@ a{color:inherit;}
   border:0;
 }
 
-/* REFERENCES FULL WIDTH */
-.references-clean-hero{
-  min-height:100vh;
-  padding:130px 0 70px 0;
-  display:flex;
-  align-items:center;
-  background:#050505;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-}
+/* =========================================================
+   REFERENCES PAGE
+========================================================= */
 
-.references-full-inner{
-  width:100%;
-  margin:0 auto;
+.references-clean-hero{
+  padding-top:140px;
+  padding-bottom:120px;
   text-align:center;
 }
 
-.references-clean-hero .kicker{
-  display:block;
-  margin-bottom:18px;
+.references-full-inner{
+  width:min(1400px,92%);
+  margin:auto;
 }
 
 .references-clean-hero h1{
-  margin:0 0 45px 0;
-  font-size:64px;
-  font-weight:500;
-  letter-spacing:-1px;
+  margin-top:18px;
+  margin-bottom:0;
 }
 
 .references-main-logo{
+  width:100%;
+  max-width:1200px;
   display:block;
-  width:100vw;
-  max-width:none;
-  height:auto;
-  margin:0 auto;
-  padding:0 20px;
+  margin:60px auto 50px;
 }
 
-.references-clean-hero p{
+.references-intro{
   max-width:900px;
-  margin:55px auto 0 auto;
-  padding:0 24px;
-  color:rgba(255,255,255,0.72);
-  line-height:1.7;
-  font-size:16px;
+  margin:0 auto 70px;
+  font-size:1.15rem;
+  line-height:1.8;
+  color:rgba(255,255,255,0.78);
+}
+
+.references-affiche{
+  width:100%;
+  max-width:1400px;
+  display:block;
+  margin:0 auto;
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+  .references-clean-hero{
+    padding-top:110px;
+    padding-bottom:90px;
+  }
+
+  .references-main-logo{
+    margin:40px auto 35px;
+  }
+
+  .references-intro{
+    font-size:1rem;
+    line-height:1.7;
+    margin-bottom:50px;
+  }
+
 }
 
 /* TOOLS SECTION */
