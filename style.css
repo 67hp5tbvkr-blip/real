@@ -475,71 +475,124 @@ a{color:inherit;}
   height:520px;
   border:0;
 }
-/* =========================================================
-   REFERENCES PAGE
-========================================================= */
+/* =========================
+   REFERENCES HERO
+========================= */
 
 .references-hero{
-  min-height:100vh;
-  padding:120px 24px 70px;
+  padding-top:140px;
+  padding-bottom:90px;
+  min-height:auto;
+}
+
+.references-hero-inner{
+  width:100%;
+  max-width:1600px;
+  margin:0 auto;
+
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+
   text-align:center;
-  gap:34px;
 }
 
-.references-logos{
+/* LOGOS */
+
+.references-logo-wrap{
   width:100%;
   display:flex;
   justify-content:center;
   align-items:center;
+
+  margin-top:30px;
+  margin-bottom:40px;
 }
 
-.references-logos img{
+.references-main-logo{
   display:block;
-  width:min(920px, 92vw);
-  max-height:52vh;
-  object-fit:contain;
+
+  width:min(1400px, 96vw);
+
+  height:auto;
+
   margin:0 auto;
 }
 
+/* BOUTONS */
+
 .hero-actions{
+  position:relative;
+
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:14px;
+  gap:16px;
   flex-wrap:wrap;
-  margin-top:4px;
-  z-index:2;
+
+  margin:0 0 34px 0;
+
+  z-index:5;
 }
+
+/* TEXTE */
 
 .references-intro{
-  max-width:860px;
-  margin:0 auto;
-  font-size:clamp(1rem, 2.5vw, 1.35rem);
-  line-height:1.55;
-  color:var(--muted);
   position:relative;
   z-index:1;
+
+  max-width:900px;
+
+  margin:0 auto;
+
+  font-size:clamp(1rem, 1.4vw, 1.3rem);
+  line-height:1.7;
+
+  color:var(--muted);
 }
 
-@media (max-width:700px){
+/* =========================
+   AFFICHES
+========================= */
+
+.references-affiches{
+  padding-top:40px;
+}
+
+.references-affiche{
+  display:block;
+  width:min(900px, 100%);
+  margin:0 auto;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
   .references-hero{
-    min-height:auto;
-    padding:105px 18px 55px;
-    gap:28px;
+    padding-top:110px;
+    padding-bottom:60px;
   }
 
-  .references-logos img{
-    width:96vw;
-    max-height:none;
+  .references-logo-wrap{
+    margin-top:24px;
+    margin-bottom:28px;
+  }
+
+  .references-main-logo{
+    width:98vw;
   }
 
   .hero-actions{
+    flex-direction:column;
     width:100%;
+
     gap:12px;
+
+    margin-bottom:26px;
   }
 
   .hero-actions .btn{
@@ -549,9 +602,9 @@ a{color:inherit;}
 
   .references-intro{
     font-size:1rem;
-    line-height:1.5;
+    line-height:1.6;
+    padding:0 8px;
   }
-}
 
 }
 /* TOOLS SECTION */
