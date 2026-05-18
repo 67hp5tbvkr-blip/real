@@ -479,70 +479,79 @@ a{color:inherit;}
    REFERENCES PAGE
 ========================================================= */
 
-.references-page .references-hero{
-  padding-top:140px;
-  text-align:center;
-}
-
-.references-page .references-hero .section-inner{
+.references-hero{
+  min-height:100vh;
+  padding:120px 24px 70px;
   display:flex;
   flex-direction:column;
   align-items:center;
+  justify-content:center;
+  text-align:center;
+  gap:34px;
 }
 
-.references-page .references-main-logo{
+.references-logos{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.references-logos img{
   display:block;
-  width:min(900px,94vw);
-  height:auto;
-  margin:42px auto 34px;
+  width:min(920px, 92vw);
+  max-height:52vh;
+  object-fit:contain;
+  margin:0 auto;
 }
 
-.references-page .hero-actions{
+.hero-actions{
   display:flex;
   justify-content:center;
   align-items:center;
   gap:14px;
   flex-wrap:wrap;
-  margin:0 0 42px;
+  margin-top:4px;
+  z-index:2;
 }
 
-.references-page .references-intro{
-  max-width:780px;
-  margin:0 auto 80px;
-  text-align:center;
-}
-
-.references-page #affiches{
-  scroll-margin-top:110px;
-}
-
-.references-page .references-affiche{
-  display:block;
-  width:min(760px,92vw);
-  height:auto;
+.references-intro{
+  max-width:860px;
   margin:0 auto;
-  border-radius:18px;
+  font-size:clamp(1rem, 2.5vw, 1.35rem);
+  line-height:1.55;
+  color:var(--muted);
+  position:relative;
+  z-index:1;
 }
 
-@media (max-width:900px){
-
-  .references-page .references-hero{
-    padding-top:120px;
+@media (max-width:700px){
+  .references-hero{
+    min-height:auto;
+    padding:105px 18px 55px;
+    gap:28px;
   }
 
-  .references-page .references-main-logo{
+  .references-logos img{
     width:96vw;
-    margin:34px auto 30px;
+    max-height:none;
   }
 
-  .references-page .references-intro{
-    max-width:88vw;
-    margin-bottom:60px;
+  .hero-actions{
+    width:100%;
+    gap:12px;
   }
 
-  .references-page .references-affiche{
-    width:94vw;
+  .hero-actions .btn{
+    width:100%;
+    max-width:320px;
   }
+
+  .references-intro{
+    font-size:1rem;
+    line-height:1.5;
+  }
+}
 
 }
 /* TOOLS SECTION */
