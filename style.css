@@ -476,31 +476,32 @@ a{color:inherit;}
   border:0;
 }
 /* =========================================================
-   REFERENCES PAGE — AJOUT UNIQUEMENT
-   N'affecte que references.html grâce à .references-page
+   REFERENCES PAGE — CORRECTION FINALE
+   N'affecte que references.html
 ========================================================= */
 
 .references-page .references-hero{
   padding-top:150px;
-  padding-bottom:90px;
 }
 
 .references-page .references-main-logo{
   display:block;
   width:100%;
-  max-width:680px;
+  max-width:620px;
   height:auto;
-  margin:42px 0 58px;
-  opacity:0.92;
+  margin:42px 0 42px;
 }
 
-.references-page .references-intro{
-  max-width:760px;
-  margin-bottom:76px;
+.references-page .hero-text{
+  max-width:780px;
+}
+
+.references-page .references-collaborations{
+  padding-top:30px;
 }
 
 .references-page #collaborations{
-  scroll-margin-top:120px;
+  scroll-margin-top:110px;
 }
 
 .references-page .references-affiche{
@@ -512,32 +513,15 @@ a{color:inherit;}
   border-radius:18px;
 }
 
-.references-page .final-cta{
-  padding-top:90px;
-}
-
-/* MOBILE */
-
 @media (max-width:900px){
-
-  .references-page .references-hero{
-    padding-top:125px;
-    padding-bottom:70px;
-  }
-
   .references-page .references-main-logo{
     max-width:100%;
-    margin:36px 0 46px;
-  }
-
-  .references-page .references-intro{
-    margin-bottom:56px;
+    margin:36px 0;
   }
 
   .references-page .references-affiche{
     max-width:100%;
   }
-
 }
 /* TOOLS SECTION */
 .tools-section{
