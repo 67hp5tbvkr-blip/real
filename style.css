@@ -475,137 +475,80 @@ a{color:inherit;}
   height:520px;
   border:0;
 }
-/* =========================
-   REFERENCES HERO
-========================= */
+/* REFERENCES PAGE - FIX FINAL */
 
-.references-hero{
-  padding-top:140px;
-  padding-bottom:90px;
+.references-page .references-hero{
   min-height:auto;
+  padding-top:130px;
+  padding-bottom:50px;
 }
 
-.references-hero-inner{
-  width:100%;
-  max-width:1600px;
-  margin:0 auto;
+.references-page .references-hero .section-inner{
+  text-align:left;
+}
 
+.references-page .references-actions{
   display:flex;
-  flex-direction:column;
   align-items:center;
-  justify-content:center;
-
-  text-align:center;
-}
-
-/* LOGOS */
-
-.references-logo-wrap{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  margin-top:30px;
-  margin-bottom:40px;
-}
-
-.references-main-logo{
-  display:block;
-
-  width:min(1400px, 96vw);
-
-  height:auto;
-
-  margin:0 auto;
-}
-
-/* BOUTONS */
-
-.hero-actions{
-  position:relative;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:16px;
+  gap:14px;
   flex-wrap:wrap;
-
-  margin:0 0 34px 0;
-
-  z-index:5;
+  margin-top:28px;
+  margin-bottom:28px;
+  position:static;
+  transform:none;
 }
 
-/* TEXTE */
+.references-page .references-intro{
+  max-width:850px;
+  margin:0;
+  position:static;
+  transform:none;
+}
 
-.references-intro{
-  position:relative;
-  z-index:1;
+.references-page .references-logos-section{
+  padding-top:20px;
+  padding-bottom:70px;
+}
 
-  max-width:900px;
-
+.references-page .references-main-logo{
+  display:block;
+  width:min(1300px, 100%);
+  height:auto;
   margin:0 auto;
-
-  font-size:clamp(1rem, 1.4vw, 1.3rem);
-  line-height:1.7;
-
-  color:var(--muted);
 }
 
-/* =========================
-   AFFICHES
-========================= */
-
-.references-affiches{
+.references-page .references-affiches{
   padding-top:40px;
 }
 
-.references-affiche{
+.references-page .references-affiche{
   display:block;
   width:min(900px, 100%);
+  height:auto;
   margin:0 auto;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width:768px){
-
-  .references-hero{
+  .references-page .references-hero{
     padding-top:110px;
-    padding-bottom:60px;
+    padding-bottom:40px;
   }
 
-  .references-logo-wrap{
-    margin-top:24px;
-    margin-bottom:28px;
-  }
-
-  .references-main-logo{
-    width:98vw;
-  }
-
-  .hero-actions{
+  .references-page .references-actions{
     flex-direction:column;
-    width:100%;
-
+    align-items:flex-start;
     gap:12px;
-
-    margin-bottom:26px;
   }
 
-  .hero-actions .btn{
+  .references-page .references-actions .btn{
     width:100%;
     max-width:320px;
+    text-align:center;
   }
 
-  .references-intro{
-    font-size:1rem;
-    line-height:1.6;
-    padding:0 8px;
+  .references-page .references-main-logo{
+    width:100%;
   }
-
 }
 /* TOOLS SECTION */
 .tools-section{
