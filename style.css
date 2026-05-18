@@ -475,12 +475,12 @@ a{color:inherit;}
   height:520px;
   border:0;
 }
-/* REFERENCES PAGE - FIX FINAL */
+/* REFERENCES PAGE */
 
 .references-page .references-hero{
   min-height:auto;
   padding-top:130px;
-  padding-bottom:50px;
+  padding-bottom:45px;
 }
 
 .references-page .references-hero .section-inner{
@@ -489,36 +489,23 @@ a{color:inherit;}
 
 .references-page .references-actions{
   display:flex;
-  align-items:center;
   gap:14px;
   flex-wrap:wrap;
-  margin-top:28px;
-  margin-bottom:28px;
-  position:static;
-  transform:none;
-}
-
-.references-page .references-intro{
-  max-width:850px;
-  margin:0;
-  position:static;
-  transform:none;
-}
-
-.references-page .references-logos-section{
-  padding-top:20px;
-  padding-bottom:70px;
-}
-
-.references-page .references-main-logo{
-  display:block;
-  width:min(1300px, 100%);
-  height:auto;
-  margin:0 auto;
+  margin-top:34px;
+  position:static !important;
+  transform:none !important;
 }
 
 .references-page .references-affiches{
-  padding-top:40px;
+  border-top:1px solid var(--line);
+  padding-top:60px;
+}
+
+.references-page .references-intro{
+  max-width:880px;
+  margin:0 0 55px 0;
+  position:static !important;
+  transform:none !important;
 }
 
 .references-page .references-affiche{
@@ -528,16 +515,25 @@ a{color:inherit;}
   margin:0 auto;
 }
 
+.references-page .final-cta{
+  border-top:1px solid var(--line);
+}
+
+.references-page .hero-actions,
+.references-page .hero-text{
+  position:static !important;
+  transform:none !important;
+}
+
 @media (max-width:768px){
   .references-page .references-hero{
     padding-top:110px;
-    padding-bottom:40px;
+    padding-bottom:35px;
   }
 
   .references-page .references-actions{
     flex-direction:column;
     align-items:flex-start;
-    gap:12px;
   }
 
   .references-page .references-actions .btn{
@@ -546,8 +542,12 @@ a{color:inherit;}
     text-align:center;
   }
 
-  .references-page .references-main-logo{
-    width:100%;
+  .references-page .references-affiches{
+    padding-top:45px;
+  }
+
+  .references-page .references-intro{
+    margin-bottom:40px;
   }
 }
 /* TOOLS SECTION */
